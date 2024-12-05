@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
     <title>Portfolio - Bibek Baram</title>
   </head>
@@ -11,12 +15,15 @@
     <header>
       <nav>
         <img src="images/logo.png" alt="logo" id="logo" />
-        <ul>
+        <ul id="nav-menu">
           <li><a href="#about">About Me</a></li>
           <li><a href="#projects">projects</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
       </nav>
     </header>
 
@@ -117,7 +124,7 @@
 
     <section id="contact">
       <h2>Contact</h2>
-      <div class="content_content">
+      <div class="contact_content">
         <p>
           If you would like to get in touch with me,
           <br />

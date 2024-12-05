@@ -13,7 +13,7 @@ body {
 
 header {
   color: #fff;
-  padding: 10px 0;
+  padding: 10px;
   text-align: center;
   position: sticky;
   top: 0;
@@ -28,6 +28,10 @@ nav {
 nav #logo {
   height: 20px;
   width: 40px;
+}
+
+nav .icon {
+  display: none;
 }
 
 nav ul li {
@@ -84,7 +88,7 @@ section {
   align-items: center;
   gap: 2rem;
   padding: 10px;
-  width: 95%;
+  width: 100%;
 }
 
 button {
@@ -176,6 +180,12 @@ button:hover {
   height: 100px;
 }
 
+.contact_content a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+}
+
 footer {
   background-color: #111;
   color: #fff;
@@ -187,13 +197,36 @@ footer {
   .about_content {
     flex-direction: column;
   }
-  .about_content p {
+
+  #about p {
     order: 2;
+    max-width: 90%;
   }
   .projects_content {
     flex-direction: column;
   }
   .skills_content {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 486px) {
+  #nav-menu {
+    display: none;
+  }
+
+  #nav-menu li {
+    display: block;
+    text-align: center;
+  }
+
+  nav .icon {
+    color: #fff;
+    display: inline;
+  }
+
+  .skills_logo {
+    width: 60px;
+    height: 60px;
   }
 }
